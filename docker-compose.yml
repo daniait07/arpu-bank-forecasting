@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  backend:
+    build: ./backend
+    volumes:
+      - ./data_bundle.pkl:/app/data_bundle.pkl
+      - ./models_bundle.pkl:/app/models_bundle.pkl
+    ports:
+      - "8000:8000"
+    environment:
+      - DATA_PATH=/app
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped

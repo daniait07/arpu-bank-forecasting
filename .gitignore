@@ -1,0 +1,12 @@
+*.pkl
+node_modules/
+__pycache__/
+.env
+*.pyc
+dist/
+.vite/
+*.log
+venv/
+.idea/
+.vscode/
+notebooks/banking_arpu.db

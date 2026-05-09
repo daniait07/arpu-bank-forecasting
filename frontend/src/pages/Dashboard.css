@@ -1,0 +1,154 @@
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.chart-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+ 
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 80px 32px;
+  text-align: center;
+}
+
+.error-icon {
+  font-size: 36px;
+  color: var(--amber);
+  line-height: 1;
+}
+
+.error-msg {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.error-detail {
+  font-size: 12px;
+  color: var(--red);
+  font-family: 'Courier New', monospace;
+}
+
+.error-hint {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+ 
+.donut-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.donut-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.donut-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.donut-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.donut-value {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+ 
+.table-wrap {
+  overflow-x: auto;
+}
+
+.models-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.models-table th {
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.models-table td {
+  padding: 9px 12px;
+  border-bottom: 1px solid rgba(42, 45, 58, 0.6);
+  color: var(--text);
+  vertical-align: middle;
+}
+
+.models-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.models-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.row-best {
+  background: rgba(52, 211, 153, 0.07) !important;
+}
+
+.row-best td {
+  color: #e2e8f0;
+}
+
+.model-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.model-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.class-badge {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.num {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.row-best .num {
+  color: var(--text);
+}

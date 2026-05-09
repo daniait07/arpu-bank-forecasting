@@ -1,0 +1,185 @@
+.mb-24 { margin-bottom: 24px; }
+
+/* ── Controls bar ── */
+.fc-controls {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.fc-model-select {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fc-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fc-select {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+  padding: 6px 32px 6px 10px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238892a4' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.fc-select:hover,
+.fc-select:focus {
+  border-color: var(--blue);
+  outline: none;
+}
+
+/* ── Horizon pills ── */
+.fc-horizon-pills {
+  display: flex;
+  gap: 6px;
+}
+
+.fc-pill {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-muted);
+  font-size: 13px;
+  padding: 6px 14px;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.fc-pill:hover {
+  border-color: var(--blue);
+  color: var(--text);
+}
+
+.fc-pill.active {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+}
+
+/* ── Main chart card ── */
+.fc-chart-card {
+  position: relative;
+  min-height: 120px;
+}
+
+.fc-chart-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.fc-error {
+  color: var(--red);
+  font-size: 13px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.fc-empty {
+  color: var(--text-muted);
+  font-size: 13px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* ── Two-column row ── */
+.fc-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* ── Chart section title ── */
+.chart-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+/* ── DM test table ── */
+.table-wrap {
+  overflow-x: auto;
+}
+
+.dm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.dm-table th {
+  color: var(--text-muted);
+  font-weight: 500;
+  text-align: left;
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.dm-table td {
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.dm-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.dm-table td.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+}
+
+.dm-table tr.dm-sig td {
+  background: rgba(52, 211, 153, 0.04);
+}
+
+.dm-badge {
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 7px;
+  white-space: nowrap;
+}
+
+.dm-badge-sig {
+  background: rgba(52, 211, 153, 0.15);
+  color: var(--green);
+}
+
+.dm-badge-ns {
+  background: rgba(136, 146, 164, 0.12);
+  color: var(--text-muted);
+}
+
+/* ── SHAP unavailable notice ── */
+.fc-shap-unavail {
+  color: var(--text-muted);
+  font-size: 13px;
+  padding: 40px 0;
+  text-align: center;
+}
