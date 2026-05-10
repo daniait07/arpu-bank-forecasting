@@ -69,6 +69,7 @@ npm run dev
 
 ## Структура
 
+```
 arpu-dashboard/
 ├── backend/
 │   ├── main.py                    FastAPI приложение, все эндпоинты
@@ -107,3 +108,4 @@ arpu-dashboard/
 ├── docker-compose.yml
 ├── .gitignore
 └── README.md
+```
